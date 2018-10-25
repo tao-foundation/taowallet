@@ -47,7 +47,6 @@ nodes.nodeList = {
         'service': 'MyEtherWallet',
         'lib': new nodes.customNode('https://api.myetherwallet.com/eth', '')
     },
-
     'etc_epool': {
         'name': 'ETC',
         'blockExplorerTX': 'https://gastracker.io/tx/[[txHash]]',
@@ -59,6 +58,18 @@ nodes.nodeList = {
         'abiList': require('./abiDefinitions/etcAbi.json'),
         'service': 'epool.io',
         'lib': new nodes.customNode('https://etc-geth.0xinfra.com', '')
+    },
+    'teo_test': {
+        'name': 'TEOt',
+        'blockExplorerTX': 'https://teoexplorer.tao.ac/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://teoexplorer.tao.ac/account/[[address]]',
+        'type': nodes.nodeTypes.TEOt,
+        'eip155': true,
+        'chainId': 33410,
+        'tokenList': require('./tokens/teotTokens.json'),
+        'abiList': require('./abiDefinitions/teotAbi.json'),
+        'service': 'tao.ac',
+        'lib': new nodes.customNode('https://teotest.tao.ac/', '')
     }
 };
 nodes.ethPrice = require('./nodeHelpers/ethPrice');
