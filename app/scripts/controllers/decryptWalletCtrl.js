@@ -23,8 +23,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         trezorTestnetPath: "m/44'/1'/0'/0",        // first address: m/44'/1'/0'/0/0
         trezorClassicPath: "m/44'/61'/0'/0",       // first address: m/44'/61'/0'/0/0
         trezorPath:        "m/44'/60'/0'/0",       // first address: m/44'/60'/0'/0/0
-        hwUbqPath:         "m/44'/108'/0'/0",      // first address: m/44'/40'/0'/0/0
-        hwExpansePath:     "m/44'/40'/0'/0"        // first address: m/44'/40'/0'/0/0
+        hwUbqPath:         "m/44'/108'/0'/0",      // first address: m/44'/108'/0'/0/0
+        hwExpansePath:     "m/44'/40'/0'/0",       // first address: m/44'/40'/0'/0/0
+        hwTEOPath:         "m/44'/8282'/0'/0"      // first address: m/44'/8282'/0'/0/0
     };
     $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
     $scope.mnemonicModel = new Modal(document.getElementById('mnemonicModel'));
@@ -49,6 +50,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                     break;
                 case nodes.nodeTypes.UBQ:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwUbqPath;
+                    break;
+                case nodes.nodeTypes.TEO:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwTEOPath;
                     break;
                 default:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
@@ -76,6 +80,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                 case nodes.nodeTypes.UBQ:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwUbqPath;
                     break;
+                case nodes.nodeTypes.TEO:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwTEOPath;
+                    break;
                 default:
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
             }
@@ -101,6 +108,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                     break;
                 case nodes.nodeTypes.UBQ:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwUbqPath;
+                    break;
+                case nodes.nodeTypes.TEO:
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwTEOPath;
                     break;
                 default:
                   $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;

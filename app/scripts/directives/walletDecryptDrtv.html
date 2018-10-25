@@ -9,12 +9,12 @@
       <span translate="x_MetaMask">MetaMask / Mist</span>
     </label>
 
-    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'">
+    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='TEO'">
       <input aria-flowto="aria2" type="radio" aria-label="Ledger Wallet hardware wallet" ng-model="walletType" value="ledger"/>
       <span>Ledger Wallet</span>
     </label>
 
-    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'">
+    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='TEO'">
       <input aria-flowto="aria6" type="radio" aria-label="Trezor hardware wallet" ng-model="walletType" value="trezor"/>
       TREZOR
     </label>
@@ -395,6 +395,17 @@
                       value="{{HDWallet.trezorClassicPath}}"/>
                 <span ng-bind="HDWallet.trezorClassicPath"></span>
                 <p class="small">TREZOR (ETC)</p>
+              </label>
+            </div>
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (TEO) {{HDWallet.hwTEOPath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwTEOPath}}"/>
+                <span ng-bind="HDWallet.hwTEOPath"></span>
+                <p class="small">Network: TEO</p>
               </label>
             </div>
 
