@@ -29,7 +29,7 @@ nodes.nodeList = {
         'blockExplorerAddr': 'https://explorer.tao.foundation/addr/[[address]]',
         'type': nodes.nodeTypes.TEO,
         'eip155': true,
-        'chainId': 34952,
+        'chainId': 33416,
         'tokenList': [],
         'abiList': [],
         'service': 'tao.foundation',
