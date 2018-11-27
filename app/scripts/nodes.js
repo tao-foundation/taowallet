@@ -7,6 +7,7 @@ nodes.nodeTypes = {
     TEO: "TEO",
     ETH: "ETH",
     ETC: "ETC",
+    TEOt: "TEOt",
     Custom: "CUSTOM TAO"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.TEO,nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
