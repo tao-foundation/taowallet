@@ -25,7 +25,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         trezorPath:        "m/44'/60'/0'/0",       // first address: m/44'/60'/0'/0/0
         hwUbqPath:         "m/44'/108'/0'/0",      // first address: m/44'/108'/0'/0/0
         hwExpansePath:     "m/44'/40'/0'/0",       // first address: m/44'/40'/0'/0/0
-        hwTEOPath:         "m/44'/8282'/0'/0"      // first address: m/44'/8282'/0'/0/0
+        hwTEOPath:         "m/44'/8288'/0'/0"      // first address: m/44'/8288'/0'/0/0
     };
     $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
     $scope.mnemonicModel = new Modal(document.getElementById('mnemonicModel'));
