@@ -45,8 +45,8 @@ nodes.nodeList = {
         'chainId': 1,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'MyEtherWallet',
-        'lib': new nodes.customNode('https://api.myetherwallet.com/eth', '')
+        'service': 'eth infura',
+        'lib': new nodes.customNode('https://mainnet.infura.io/mew', '')
     },
     'etc_epool': {
         'name': 'ETC',
@@ -57,8 +57,8 @@ nodes.nodeList = {
         'chainId': 61,
         'tokenList': require('./tokens/etcTokens.json'),
         'abiList': require('./abiDefinitions/etcAbi.json'),
-        'service': 'epool.io',
-        'lib': new nodes.customNode('https://etc-geth.0xinfra.com', '')
+        'service': 'ETC Coop parity',
+        'lib': new nodes.customNode('https://www.ethereumclassic.network/', '')
     },
     'teo_test': {
         'name': 'TEOt',
