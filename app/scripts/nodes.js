@@ -33,10 +33,10 @@ nodes.nodeList = {
         'chainId': 33416,
         'tokenList': [],
         'abiList': [],
-        'service': 'tao.foundation',
+        'service': 'TAO.Foundation',
         'lib': new nodes.customNode('https://teonode1.tao.foundation', '')
     },
-    'eth_mew': {
+    'eth_tao': {
         'name': 'ETH',
         'blockExplorerTX': 'https://etherscan.io/tx/[[txHash]]',
         'blockExplorerAddr': 'https://etherscan.io/address/[[address]]',
@@ -45,20 +45,20 @@ nodes.nodeList = {
         'chainId': 1,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'eth infura',
-        'lib': new nodes.customNode('https://mainnet.infura.io/mew', '')
+        'service': 'TAO.Foundation',
+        'lib': new nodes.customNode('https://ethapi1.tao.foundation', '')
     },
-    'etc_epool': {
+    'etc_tao': {
         'name': 'ETC',
-        'blockExplorerTX': 'https://gastracker.io/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://gastracker.io/addr/[[address]]',
+        'blockExplorerTX': 'https://blockscout.com/etc/mainnet/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://blockscout.com/etc/mainnet/address/[[address]]',
         'type': nodes.nodeTypes.ETC,
         'eip155': true,
         'chainId': 61,
         'tokenList': require('./tokens/etcTokens.json'),
         'abiList': require('./abiDefinitions/etcAbi.json'),
-        'service': 'ETC Coop parity',
-        'lib': new nodes.customNode('https://www.ethereumclassic.network/', '')
+        'service': 'TAO.Foundation',
+        'lib': new nodes.customNode('https://etcapi1.tao.foundation', '')
     },
     'teo_test': {
         'name': 'TEOt',
